@@ -4,7 +4,6 @@ import Layout from "@theme/Layout";
 import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import styles from "./index.module.css";
-import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import logo from "../../static/img/avataar/ghoul.jpg";
 import noise from "../../static/img/avataar/noise.png";
 

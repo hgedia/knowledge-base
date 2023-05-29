@@ -102,7 +102,20 @@ const config = {
           {
             href: 'https://github.com/hgedia',
             position: 'right',
+            className: 'navbar-github-link',
             'aria-label': 'GitHub repository',
+          },
+          {
+            href: 'https://www.linkedin.com/in/haresh-gedia/',
+            position: 'right',
+            className: 'navbar-linkedin-link',
+            'aria-label': 'LinkedIn Account',
+          },
+          {
+            href: 'https://twitter.com/h_gedia',
+            position: 'right',
+            className: 'navbar-twitter-link',
+            'aria-label': 'Twitter Account',
           },
         ],
       },
