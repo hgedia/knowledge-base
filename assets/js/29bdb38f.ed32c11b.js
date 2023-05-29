@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkknowledge_base=self.webpackChunkknowledge_base||[]).push([[8168],{4541:e=>{e.exports=JSON.parse('{"label":"hola","permalink":"/knowledge-base/blog/tags/hola","allTagsPath":"/knowledge-base/blog/tags","count":1}')}}]);
