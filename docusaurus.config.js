@@ -6,8 +6,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Scratch places',
-  tagline: 'BYOB',
+  title: 'hgedia',
+  tagline: "Tis' but a scratch place",
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -32,6 +32,27 @@ const config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
+  // stylesheets: [
+  //   {
+  //     href: "https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css",
+  //     type: "text/css",
+  //     integrity:
+  //         "sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X",
+  //     crossorigin: "anonymous",
+  //   },
+  // ],
+  // plugins:    [
+  //   async function tailwindPlugin(context, options) {
+  //     return {
+  //       name: "docusaurus-tailwindcss",
+  //       configurePostCss(postcssOptions) {
+  //         postcssOptions.plugins.push(require("tailwindcss"));
+  //         postcssOptions.plugins.push(require("autoprefixer"));
+  //         return postcssOptions;
+  //       },
+  //     };
+  //   },
+  // ],
 
   presets: [
     [
@@ -42,8 +63,8 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/hgedia/knowledge-base/tree/main/',
+          // editUrl:
+          //   'https://github.com/hgedia/knowledge-base/tree/main/',
         },
         blog:
             {
@@ -75,8 +96,13 @@ const config = {
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
+            position: 'left',
+            label: 'Musings',
+          },
+          {
+            href: 'https://github.com/hgedia',
             position: 'right',
-            label: 'Docs',
+            'aria-label': 'GitHub repository',
           },
         ],
       },
@@ -116,6 +142,11 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+      },
+      colorMode: {
+        defaultMode: 'dark',
+        disableSwitch: true,
+        respectPrefersColorScheme: false,
       },
     }),
 };
