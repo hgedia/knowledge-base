@@ -123,7 +123,7 @@ export default function Home() {
     const { siteConfig } = useDocusaurusContext();
     return (
         <Layout
-            title={`H_e_l_l_o`}
+            title={`H_e_L_L_O`}
             description="Musings <head />"
         >
             <HomepageHeader />
