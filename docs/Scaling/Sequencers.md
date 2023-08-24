@@ -2,14 +2,16 @@
 sidebar_position: 1
 ---
 
-# Modular/Monolithic 
+# Sequencer
+
+## Modular/Monolithic 
 
 In monolithic blockchain networks, there is a single process (application) which does the activity of consensus, settlement
 and execution. Modular networks , break the responsibilities out into different processes. As an example pre ETH 2.0,
 `geth` was responsible for all the above-mentioned activities to keep the network operational. After ETH 2.0, the layers
 of consensus and execution have now been seperated allowing more variety of clients to cross-communicate.
 
-# Rollup's
+## Rollup's
 The rollup centric vision of Ethereum, execution is carried off chain (L2) but settlement happens on chain(L1). There
 are strong security guarantees provided by mechanisms of fraud or validity proofs. As you move away from the 
 L1, L2 systems centralise a number of sub-systems. This is done to improve the performance/fees incurred by the user.
@@ -17,7 +19,7 @@ It is also viewed as "progressive decentralization" roadmap, i.e. with time thes
 On the flip side some projects take the base assumption is that , as long as L1 is providing security, 
 this is a non-issue.
 
-# Sequencer
+# Shared Sequencer
 
 L2 systems centralize the first touch point of the transaction flow. Sequencer is the process which intercepts the user 
 transaction. Sequencer is only responsible for sequencing the incoming transactions and post them to the L1 systems. 
