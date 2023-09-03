@@ -38,24 +38,27 @@ a trusted setup. They achive this by using interactive oracle proofs (IOP) or Ho
 
 - Statement(x) : public data what we are proving - hashvalue
 - Witness(w): private data - secret
-- Ralation(R): What is the relationship between x & w? Ex: if R(x,w) is true if x == H(x)
+- Relation(R): What is the relationship between x & w? Ex: if R(x,w) is true if x == H(x)
 
 
+# SNARKs vs STARKS
 
-[//]: # (1. Computation)
+## SNARKS
+-  Zk-SNARKs at their base depend upon elliptic curves for their security. Elliptic curves in cryptography operate under
+the base assumption that finding the discrete logarithm of a random elliptic curve element with respect to a publicly
+known base point is infeasible.
+- zk-SNARKs require a trusted setup.
+- ZK-SNARKS are not quantum resistant
 
-[//]: # (2. Arithmetic Circuit)
+## STARKS
 
-[//]: # (3. R1CS &#40;Rank 1 constraint system&#41;)
-
-[//]: # (4. QAP &#40;Quadratic arithmetic program&#41;)
-
-[//]: # (5. SNARK)
-
-
+- STARKs relies on hash functions.
+- STARKS do not require a trusted setup
+- STARKS are quantum resistant.
 
 
 
 #### References
 
  - [Introduction to Zero Knowledge Proofs](https://www.youtube.com/watch?v=BT88s7_VtC8&t=37s) - Elena Nadolinski
+ - [Zero-Knowledge Proofs: STARKs vs SNARKs](https://consensys.net/blog/blockchain-explained/zero-knowledge-proofs-starks-vs-snarks/)
