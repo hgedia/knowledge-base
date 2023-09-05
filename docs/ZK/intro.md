@@ -58,7 +58,41 @@ known base point is infeasible.
 
 
 
+## Powers of Tau Ceremony
+
+Because of their advantages, zkSNARKs are not going away anytime soon. But the reality is that the security of a system 
+based on zkSNARKs largely boils down to how the CRS was generated. Doing so without compromising the ideals of 
+privacy-preserving blockchain-based systems: (security and decentralization) is very important. The generation of 
+public parameters for zkSNARKs is called the “setup ceremony” because of its importance and (as we will see) 
+the need for multiple independent parties to contribute to the process.
+
+
+So far, the preferred technique for setup ceremonies has been multi-party computation (MPC). Setup ceremony MPC schemes 
+are interactive protocols involving multiple parties who contribute randomness to iteratively construct the CRS. 
+Key to this technique is that all parties need to keep the inputs (their sampled randomness) hidden. In fact, 
+honest participants should delete this “toxic waste,” immediately. Otherwise, a malicious party with knowledge 
+of these inputs could exploit the underlying mathematical structure of the CRS to create unsound proofs.
+
+
+A typical ceremony consists of number of players, the coordinator, and the verifier. The MPC protocols are always of a 
+round-robin nature, where a player receives a single message from player. Player(n-1) adds their input to accumulated 
+randomness before passing it onto Player(n) . In the end, the final result is the CRS. 
+In the intermediate state, as it is being passed between players, the message is referred to as the “transcript.”
+
+Zcash used the BCGTV scheme to generate the CRS for the first version of ZCash.Despite its novelty, a drawback of the
+BCGTV protocol requires that participants be identified in advance. So participation in the ceremony was cumbersome 
+and limited to experts who could be trusted to perform it properly.
+
+In 2017, Bowe et al. introduced a second family of MPC protocols [BGM17] specifically for pairing-based zk-SNARKs 
+like Groth16. This paper aimed to address some of the drawbacks of prior schemes. In their proposed protocol called 
+MMORPG, a central “coordinator” manages messages between the participants. The CRS is generated in two phases. 
+The first phase referred to as “Powers of Tau”, produces generic setup parameters that can be used for all 
+circuits of the scheme, up to a given size. The second phase converts the output of the Powers of Tau phase 
+into an NP-relation-specific CRS.
+
+
 #### References
 
  - [Introduction to Zero Knowledge Proofs](https://www.youtube.com/watch?v=BT88s7_VtC8&t=37s) - Elena Nadolinski
  - [Zero-Knowledge Proofs: STARKs vs SNARKs](https://consensys.net/blog/blockchain-explained/zero-knowledge-proofs-starks-vs-snarks/)
+ - [Powers of Tau](https://zkproof.org/2021/06/30/setup-ceremonies/)
