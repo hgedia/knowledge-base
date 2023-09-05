@@ -90,6 +90,11 @@ The first phase referred to as “Powers of Tau”, produces generic setup param
 circuits of the scheme, up to a given size. The second phase converts the output of the Powers of Tau phase 
 into an NP-relation-specific CRS.
 
+The “Powers of Tau” ceremony has several advantages over earlier schemes. First, contributors do not need to be selected
+in advance. Instead, the protocol uses a random beacon that produces public, random values at set intervals to enable
+a continuous ceremony. Participants, therefore, do not always need to be available and online. The random beacon also 
+ensures public verifiability of the coordinator. As a result, the protocol can theoretically support 
+hundreds or even thousands of participants.
 
 #### References
 
