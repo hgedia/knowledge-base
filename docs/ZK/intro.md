@@ -30,7 +30,7 @@ Systems like groth16 need a trusted setup to generate CRS. A variant of this cou
 this ceremony needs to be done only once , instead per interaction. 
 
 Proof systems like PLONK,Halo,STARKS do not require
-a trusted setup. They achive this by using interactive oracle proofs (IOP) or Holographic proving systems(AHP).
+a trusted setup. They achieve this by using interactive oracle proofs (IOP) or Holographic proving systems(AHP).
 
 # Terminology
 
