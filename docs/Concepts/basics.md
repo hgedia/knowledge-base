@@ -51,8 +51,8 @@ Gas is paid as a unit of comutation for transactions.
 One-way pseudorandom (and collision-resistant) function h = hash(x)
 
 Properties
-- Preimage Resistance : Given a hash value h it should be difficult to find any message m such that h = hash(m).In other words, 
-the hash h provides “no clues or hints” about the input.
+- Preimage Resistance : Given a hash value h it should be difficult to find any message m such that h = hash(m).
+In other words,the hash h provides “no clues or hints” about the input.
 - Second Preimage Resistance : Given an input m1, it should be difficult to find a different input m2 such 
 that hash(m1) = hash(m2).
 - Collision-Resistance : Basically, there cannot be ANY collisions for ANY pair of messages.
@@ -65,6 +65,8 @@ Instead, we give him m, and challenge him with finding m' (distinct from m) such
 A second-preimage is also a collision, but we keep the concept distinct because second-preimages are supposed to be 
 substantially harder.
 
+### ETH Block Header
+![ETH Block Header](../../static/img/docs/eth_block_header.png)
 
 
 --- 
