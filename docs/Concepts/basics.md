@@ -24,11 +24,11 @@ for trusted intermediaries. (Nick Szabo)
 They are computer programs stored on the blockchain that follow "if this then that" logic, and are guaranteed to 
 execute according to the rules defined by its code, which cannot be changed once created.
 
-A smart contract will : 
-- I will never modify or change your code.
-- I will always run the code you tell me too (assuming the code itself allows me!).
-- I will never let code execution “stop half way” it is ALL or NOTHING with me.
-- I like to gossip and I can’t keep secrets - Everything you tell me will be public knowledge.
+A smart contract is :
+- Immutable. Never modify or change your code.
+- Authenticated calls. Always run the function you tell it too (assuming the code allows!).
+- Atomic. Never let code execution “stop half way” it is ALL or NOTHING.
+- No privacy. Gossip and can’t keep secrets - Everything  will be public knowledge.
 
 ### Accounts
 - Externally owned accounts: controlled by people/keys
