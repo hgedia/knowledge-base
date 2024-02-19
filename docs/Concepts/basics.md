@@ -40,7 +40,7 @@ A smart contract is :
 - Creation Transaction: The code of a smart contract is stored in a transaction’s payload and sent to the Blockchain.
 - Invocation Transaction: The commands to invoke code in the contract is stored in a transaction’s payload and sent to the Blockchain.
 
-Gas is paid as a unit of comutation for transactions.
+Gas is paid as a unit of computation for transactions.
 
 ### Primitives
 
